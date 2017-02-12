@@ -7,6 +7,11 @@ body {
 .navbar {
   margin-bottom: 0px;
 }
+
+.navbar-avatar {
+  width: 22px;
+}
+
 .btn, .btn:active, .btn-primary:active, .btn-default:active, .btn.active, .btn:focus, .btn:hover, .btn-navbarcustom  {
 	background-color: #00b22d;
 	background: -webkit-linear-gradient(#35c350, #03b525);
@@ -121,4 +126,16 @@ select {
 	color: #00b22d;
 	padding: 0px 10px;
 	font-size: 19px;
+}
+
+.auth-form {
+  margin-top: 50px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+
+.panel-default .panel-heading {
+  background-color: white;
 }
