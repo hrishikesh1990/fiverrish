@@ -11,6 +11,9 @@
         <%= image_tag(@service.image.url, :class => 'img-responsive') %>
       </div>
     </div>
+  </div>
+  <div class="col-md-4">
+    <%= render 'orders/form' %>
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3>About This Gig</h3>
@@ -19,6 +22,5 @@
         <p><%= @service.description %></p>
       </div>
     </div>
-
   </div>
 </div>

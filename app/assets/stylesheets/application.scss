@@ -139,3 +139,20 @@ select {
 .panel-default .panel-heading {
   background-color: white;
 }
+
+.select-control-order-form {
+  font-size: 12px;
+  position: relative;
+  display: block;
+}
+
+.select-control-order-form:before {
+	content: '\25bc';
+	font-size: 16px;
+	top: 10px;
+	left: 80px;
+	position: absolute;
+	color: #ccc;
+	transform: scale(0.84, 0.42);
+	pointer-events:none;
+}

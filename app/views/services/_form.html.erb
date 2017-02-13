@@ -1,6 +1,6 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h2>Create your gig</h2>
+    <h2><%= @service.new_record? ? "Create your gig" : "Edit your gig" %></h2>
   </div>
   <div class="panel-body">
     <%= form_for @service do |f| %>
@@ -41,7 +41,7 @@
         <%= f.file_field :image%>
       </div>
       <hr>
-      <%= f.submit "Publish Gig", class:"btn btn-primary" %>
+      <%= f.submit @service.new_record? ? "Publish Gig" : "Update Gig", class:"btn btn-primary" %>
     <% end %>
   </div>
 </div>
