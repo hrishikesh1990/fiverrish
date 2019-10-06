@@ -2,8 +2,10 @@ class OrdersController < ApplicationController
   before_action :authenticate_user!
 
   def create
-    @order = current_user.orders.create(order_params)
-    redirect_to @order.service
+    @order = current_user.orders.new(order_params)
+    @order.total_price = @order.quantity * @order.price
+    @order.save
+    redirect_to user_orders_path(current_user)
   end
 
   def user_orders
