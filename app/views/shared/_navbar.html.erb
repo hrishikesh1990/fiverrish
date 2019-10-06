@@ -30,6 +30,7 @@
               <li><%= link_to "View Profile", user_path(current_user.id) %></li>
               <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
               <li class="dropdown-header">Buying</li>
+              <li><%= link_to "My Orders", user_orders_path %></li>
               <li class="dropdown-header">Selling</li>
               <li><%= link_to "My Gigs", services_path %></li>
               <li><%= link_to "Create a Gig", new_service_path %></li>
